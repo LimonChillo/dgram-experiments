@@ -10,7 +10,7 @@ server.on('listening', function () {
 });
 
 server.on('message', function (message, remote) {
-    console.log('Message from: ' + remote.address + ':' + remote.port);
+    console.log('Message from ' + remote.address + ':' + remote.port);
     console.log('calculating...')
 
     message = message + '';
